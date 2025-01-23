@@ -1,0 +1,81 @@
+/* Styles pour la page d'ajout d'article */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 15vh;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    font-size: 18px;
+    color: #555;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* fin */
+
+/* style pour le footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* fin du style pour le footer */

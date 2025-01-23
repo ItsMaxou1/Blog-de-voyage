@@ -1,0 +1,346 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* style pour le top main */
+
+.top-background {
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond avec opacité */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 4vh;
+}
+
+.top-main {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 37px;
+}
+
+.top-nav {
+    flex: 1;
+    text-align: center;
+    width: 100%;
+}
+
+.top-profil {
+    position: absolute;
+    right: 0;
+    margin-right: 2%;
+    top: 50%;
+}
+
+/* Styles du menu de navigation */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+/* Styles pour les sous-menus */
+.top-nav ul li {
+    position: relative;
+}
+
+.sous-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    background-color: gray;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+.sous-menu.scroll {
+    background-color: rgba(206, 206, 206, 0.5); 
+}
+
+.sous-menu.scroll a {
+    color: #000;
+}
+
+.top-nav ul li:hover .sous-menu {
+    display: block;
+}
+
+.sous-menu li {
+    display: block;
+}
+
+/* fin du style top main */
+
+/* style pour la plage de fond */
+
+.plage-fond {
+    background-image: url(europe/fond-article-un.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.plage-fond-desc {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.plage-fond h1 {
+    color: white;
+    font-size: 4vh;
+}
+
+.plage-fond p {
+    color: white;
+    font-size: 2.5vh;
+}
+
+/* Styles pour l'article détaillé */
+.plage {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plage h2 {
+    font-size: 3.5vh;
+}
+
+.plage img {
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.plage img:hover {
+    transform: scale(1.05);
+}
+
+
+.plage h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.plage p {
+    margin-bottom: 3%;
+    font-size: 2.3vh;
+    line-height: 3vh;
+    color: #555;
+    max-width: 78%;
+}
+
+/* fin du style pour l'article détaillé */
+
+/* style pour les commentaires */
+
+.commentaire-principal h2 {
+    font-size: 3vh;
+}
+
+.commentaire-principal h3 {
+    font-size: 2.3vh;
+}
+
+.commentaires {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.commentaire {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.commentaire p {
+    margin: 0;
+    color: #333;
+    margin-bottom: 1%;
+    font-size: 2.2vh;
+}
+
+/* fin du style pour les commentaires */
+
+/* Styles pour le formulaire d'ajout de commentaire */
+.ajout-commentaire {
+    margin-top: 40px;
+}
+
+.ajout-commentaire label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    font-size: 2vh;
+}
+
+.ajout-commentaire input[type="text"],
+.ajout-commentaire textarea {
+    width: 98%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #555;
+}
+
+.ajout-commentaire input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.ajout-commentaire input[type="submit"]:hover {
+    background-color: #555;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* fin du style pour l'ajout des commentaires */
+
+/*style pour le footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reseaux-sociaux {
+    margin-bottom: 20px;
+}
+
+.reseaux-sociaux a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.reseaux-sociaux a img {
+    width: 55px;
+    height: 55px;
+}
+
+.boutons-footer {
+    margin-bottom: 20px;
+}
+
+.bouton-footer {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.bouton-footer:hover {
+    background-color: #45a049;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+/* fin du style pour le footer */
+
+/* Tel SE */
+
+@media only screen and (max-width: 376px) {
+    header h1 {
+        margin-right: 10%;
+        font-weight: bold;
+    }
+    
+    nav ul li a {
+        font-size: 2vh;
+    }
+
+    .top-profil {
+        top: 20%;
+    }
+
+    .plage-fond h1 {
+        font-size: 3vh;
+    }
+
+    .plage-fond p {
+        font-size: 2vh;
+    }
+
+    .ajout-commentaire input[type="text"], .ajout-commentaire textarea {
+        width: 90%;
+    }
+
+    .ajout-commentaire input[type="submit"] {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+/* fin Tel SE */

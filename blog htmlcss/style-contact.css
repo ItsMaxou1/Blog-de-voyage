@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles du header */
+.top-background {
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond avec opacité */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 4vh;
+}
+
+.top-main {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-nav {
+    flex: 1;
+    text-align: center;
+    width: 100%;
+}
+
+.top-profil {
+    position: absolute;
+    right: 0;
+    margin-right: 2%;
+    top: 50%;
+}
+
+/* Styles du menu de navigation */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.sous-menu a {
+    color: black;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+/* Styles pour les sous-menus */
+.top-nav ul li {
+    position: relative;
+}
+
+.sous-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #fff;
+    background-color: rgba(206, 206, 206);
+}
+
+.top-nav ul li:hover .sous-menu {
+    display: block;
+}
+
+.sous-menu li {
+    display: block;
+}
+
+/* fin du header */
+
+.contact-container {
+    background-image: url('fond-contact.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content {
+    text-align: center;
+    color: white;
+}
+
+.contact-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: white;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 2.1vh;
+}
+
+form button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #CECECE;
+    color: black;
+    font-weight: bold;
+}
+
+/*style pour le footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reseaux-sociaux {
+    margin-bottom: 20px;
+}
+
+.reseaux-sociaux a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.reseaux-sociaux a img {
+    width: 55px;
+    height: 55px;
+}
+
+.boutons-footer {
+    margin-bottom: 20px;
+}
+
+.bouton-footer {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.bouton-footer:hover {
+    background-color: #45a049;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+/* fin du style pour le footer */
+
+/* Tel SE */
+
+@media only screen and (max-width: 376px) {
+    header h1 {
+        margin-right: 10%;
+        font-weight: bold;
+    }
+    
+    nav ul li a {
+        font-size: 2vh;
+    }
+
+    .top-profil {
+        top: 9%;
+        right: 25px;
+    }
+
+    form input, form textarea {
+        width: 94%;
+    }
+
+    .contact-content h1 {
+        margin-bottom: 0px;
+    }
+
+    footer {
+        margin-top: 0vh;
+    }
+
+}
+
+/* fin Tel SE */
