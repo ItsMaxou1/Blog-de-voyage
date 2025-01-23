@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="style-contact.css">
+</head>
+<body>
+
+    <div class="top-background">
+        <header>
+            <h1>Voyage Explorer</h1>
+
+            <div class="top-main">
+                <div class="top-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li>
+                                <a href="#">Destinations</a>
+                                <ul class="sous-menu">
+                                    <li><a href="europe.html">Europe</a></li>
+                                    <li><a href="#">Afrique</a></li>
+                                    <li><a href="#">Asie</a></li>
+                                    <li><a href="#">Amérique</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="conseils.html">Conseils</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="top-profil">
+                    <a href="identification.html">
+                        <img src="profil.svg" alt="photo de profil">
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-content">
+            <h1>Contactez-nous</h1>
+            <p>Que vous ayez des questions, des commentaires ou des suggestions, n'hésitez pas à nous contacter. Nous sommes là pour vous aider !</p>
+            <form action="#" method="post">
+                <input type="text" name="nom" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <textarea name="message" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="reseaux-sociaux">
+                <a href="#"><img src="icones/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="icones/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="icones/facebook.png" alt="Facebook"></a>
+            </div>
+            <div class="boutons-footer">
+                <a href="regles-mentions/regle.html" class="bouton-footer">Règles et confidentialité</a>
+                <a href="regles-mentions/mentions.html" class="bouton-footer">Mentions légales</a>
+            </div>
+            <div class="copyright">
+                © 2024 Voyage Explorer. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var form = document.querySelector("form");
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                // Validation du formulaire ici (si nécessaire)
+
+                // Afficher la pop-up de confirmation
+                alert("Message envoyé !");
+
+                // Réinitialiser le formulaire
+                form.reset();
+            });
+        });
+    </script>
+
+</body>
+</html>
